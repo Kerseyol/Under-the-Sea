@@ -1,0 +1,48 @@
+.intro {
+  background-color: $dark;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  min-height: 350px;
+  text-align: center;
+  padding: 1rem 2rem;
+}
+
+@media (min-width: 700px) {
+  .intro {
+    min-height: 500px;
+  }
+
+  .intro h2 {
+    padding-top: 100px;
+    font-size: 2rem;
+  }
+
+  .intro p {
+    font-size: 1.2rem;
+  }
+
+  .intro > * {
+    margin-bottom: 2rem;
+    max-width: 70ch;
+  }
+}
+
+@media (min-width: 1000px) {
+  .intro h2 {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 1300px) {
+  .intro {
+    min-height: 700px;
+  }
+  .intro h2 {
+    font-size: 60px;
+  }
+  .intro p {
+    font-size: 22px;
+  }
+}

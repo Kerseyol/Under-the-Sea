@@ -1,0 +1,75 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+button {
+  font-family: $primary;
+  text-transform: uppercase;
+}
+
+button {
+  color: white;
+}
+
+.accent1 {
+  padding: 0.5rem 1rem;
+  background-color: $blue;
+  color: $dark;
+  border: 2px solid transparent;
+}
+
+.accent1:hover,
+.accent1:focus {
+  background-color: inherit;
+  border: 2px solid $blue;
+  color: white;
+  cursor: pointer;
+}
+
+.accent2 {
+  padding: 0.5rem 1rem;
+  background-color: $dark;
+  color: white;
+  border: 2px solid transparent;
+}
+
+.accent2:hover,
+.accent2:focus {
+  background-color: $blue;
+  color: $dark;
+  border: 2px solid $blue;
+  cursor: pointer;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p {
+  padding: 0;
+  margin: 0;
+  color: white;
+}
+
+p {
+  font-family: $secondary;
+  max-width: 70ch;
+}
+
+@media (min-width: 1000px) {
+  .accent1,
+  .accent2 {
+    font-size: 20px;
+  }
+}

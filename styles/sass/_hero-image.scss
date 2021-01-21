@@ -1,0 +1,37 @@
+.hero-image {
+  background-image: url(.././assets/banner.jpg);
+  height: 250px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@media (min-width: 900px) {
+  .hero-image {
+    height: 350px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .hero-image {
+    height: 400px;
+  }
+}
+
+@media (min-width: 1500px) {
+  .hero-image {
+    height: 450px;
+  }
+}
+
+@media (min-width: 1700px) {
+  .hero-image {
+    height: 500px;
+  }
+}
+
+@media (min-width: 1900px) {
+  .hero-image {
+    height: 600px;
+  }
+}

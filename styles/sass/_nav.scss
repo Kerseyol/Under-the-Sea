@@ -1,0 +1,143 @@
+.desktop-nav {
+  min-height: 3rem;
+  background-color: $green;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+.desktop-nav ul {
+  display: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.desktop-nav a {
+  display: none;
+  text-transform: uppercase;
+}
+
+.mobile-nav {
+  position: absolute;
+  top: 3rem;
+  right: 0%;
+  margin: 0;
+  padding: 0;
+  z-index: 2;
+  height: 0px;
+  overflow: hidden;
+}
+
+.mobile-nav--open {
+  height: auto;
+}
+
+.mobile-nav ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.mobile-nav li {
+  background-color: $green;
+}
+
+.mobile-nav a {
+  color: white;
+  display: block;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 2rem 6rem;
+  border-bottom: $dark;
+  transition: all 175ms ease-in-out;
+}
+
+.mobile-nav a:last-child {
+  border-bottom: none;
+}
+
+.mobile-nav a:hover,
+.mobile-nav a:focus {
+  cursor: pointer;
+  color: $dark;
+  background-color: $blue;
+}
+
+.menu-toggle {
+  padding: 1em;
+  position: absolute;
+  right: 0.5em;
+  top: 0.5em;
+  z-index: 3;
+}
+
+.menu-toggle:hover {
+  cursor: pointer;
+}
+
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+  content: "";
+  display: block;
+  background: black;
+  height: 3px;
+  width: 1.5em;
+  z-index: 3;
+  border-radius: 3px;
+  transition: all ease-in-out 500ms;
+}
+
+.hamburger::before {
+  transform: translateY(-6px);
+}
+
+.hamburger::after {
+  transform: translateY(3px);
+}
+
+.open .hamburger {
+  transform: rotate(45deg);
+}
+
+.open .hamburger::before {
+  opacity: 0;
+}
+
+.open .hamburger::after {
+  transform: translateY(-3px) rotate(-90deg);
+}
+
+@media (min-width: 700px) {
+  .menu-toggle {
+    display: none;
+  }
+
+  .desktop-nav {
+    background: rgba(15, 97, 78, 0.2);
+  }
+
+  .desktop-nav a {
+    display: flex;
+    padding: 1rem 2rem;
+  }
+
+  .desktop-nav a:hover,
+  .desktop-nav a:focus {
+    background-color: $blue;
+    color: $dark;
+  }
+}
+
+@media (min-width: 900px) {
+  .desktop-nav ul {
+    justify-content: flex-end;
+    margin-right: 10%;
+  }
+  .desktop-nav a {
+    font-size: 1.3rem;
+  }
+}
