@@ -1,3 +1,9 @@
+@media (max-width: 699px) {
+  .comments__box img {
+    width: 125px;
+  }
+}
+
 @media (min-width: 700px) {
   .blog__container {
     display: flex;
