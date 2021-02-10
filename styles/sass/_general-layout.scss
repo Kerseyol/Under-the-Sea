@@ -12,11 +12,26 @@ button {
   color: white;
 }
 
+.button {
+  display: inline;
+  text-transform: uppercase;
+}
+
+.button > * {
+  text-transform: uppercase;
+}
+
+.accent1 *,
+.accent2 * {
+  text-transform: uppercase;
+}
+
 .accent1 {
   padding: 0.5rem 1rem;
   background-color: $blue;
   color: $dark;
   border: 2px solid transparent;
+  text-transform: uppercase;
 }
 
 .accent1:hover,
@@ -32,6 +47,7 @@ button {
   background-color: $dark;
   color: white;
   border: 2px solid transparent;
+  text-transform: uppercase;
 }
 
 .accent2:hover,
@@ -49,6 +65,7 @@ ul li {
 a {
   text-decoration: none;
   color: white;
+  text-transform: uppercase;
 }
 
 body,
